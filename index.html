@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Delivery Empire — Roblox delivery experience." />
+    <title>Delivery Empire | Roblox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800;1,900&family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="scroll-progress" aria-hidden="true"><i></i></div>
+
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Delivery Empire home"><span class="brand-icon">DE</span><span>DELIVERY<br /><b>EMPIRE</b></span></a>
+      <nav class="desktop-nav" aria-label="Main navigation"><a href="#experience">EXPERIENCE</a><a href="#missions">MISSIONS</a><a href="#intel">INTEL</a></nav>
+      <a class="play-small" href="https://www.roblox.com/share?code=77a40424179036409f8a3e91c1508227&amp;type=ExperienceDetails&amp;stamp=1792428476535" target="_blank" rel="noreferrer">PLAY NOW <span>↗</span></a>
+      <button class="menu" type="button" aria-label="Open navigation" aria-expanded="false"><span>MENU</span><i></i><i></i></button>
+      <nav class="mobile-nav" aria-label="Mobile navigation"><a href="#experience">EXPERIENCE</a><a href="#missions">MISSIONS</a><a href="#intel">INTEL</a><a href="https://www.roblox.com/share?code=77a40424179036409f8a3e91c1508227&amp;type=ExperienceDetails&amp;stamp=1792428476535" target="_blank" rel="noreferrer">PLAY ON ROBLOX ↗</a></nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <img class="hero-visual" src="assets/delivery-empire-cover.png" alt="Delivery Empire courier riding a scooter through the city" />
+        <div class="hero-vignette"></div>
+        <div class="hero-copy reveal visible">
+          <p class="eyebrow"><span></span> ROBLOX DELIVERY EXPERIENCE</p>
+          <h1>THE CITY<br /><em>IS YOURS.</em></h1>
+          <p class="hero-text">Take the job. Own the route. Build your delivery empire one run at a time.</p>
+          <a class="button main-button" href="https://www.roblox.com/share?code=77a40424179036409f8a3e91c1508227&amp;type=ExperienceDetails&amp;stamp=1792428476535" target="_blank" rel="noreferrer"><span>01</span> START PLAYING <b>↗</b></a>
+        </div>
+        <div class="hero-hud" aria-hidden="true"><span>DELIVERY EMPIRE / ONLINE</span><span>SECTOR 01 — CITY RUNS</span><span>SCROLL TO ENTER <b>↓</b></span></div>
+      </section>
+
+      <section class="manifesto section" id="experience">
+        <div class="section-index"><span>01</span><i></i><p>THE EXPERIENCE</p></div>
+        <div class="manifesto-main reveal"><p class="eyebrow dark"><span></span> THE HUSTLE NEVER STOPS</p><h2>EVERY<br />ROUTE IS<br /><em>YOUR STORY.</em></h2></div>
+        <div class="manifesto-side reveal"><p>Start the engine and chase the next order. From pickup to drop-off, every trip is a chance to push farther through the city.</p><span class="mono-note">[ DELIVERY EMPIRE / 001 ]</span></div>
+      </section>
+
+      <section class="mission-section" id="missions">
+        <div class="mission-head reveal"><div class="section-index light"><span>02</span><i></i><p>MISSION CONTROL</p></div><p class="mission-intro">Select a mission file to explore the world of Delivery Empire.</p></div>
+        <div class="mission-console reveal">
+          <div class="mission-list" role="tablist" aria-label="Gameplay missions">
+            <button class="mission active" role="tab" aria-selected="true" data-image="assets/gameplay-pickup.png" data-label="MISSION / 01" data-title="PICK UP<br />THE PACE." data-body="Find the next order and pull up to the location. Every shift starts with a choice: wait around, or get moving."><span>01</span><b>PICKUP RUN</b><i>↗</i></button>
+            <button class="mission" role="tab" aria-selected="false" data-image="assets/gameplay-dropoff.png" data-label="MISSION / 02" data-title="MAKE THE<br />DROP-OFF." data-body="Stay on route, reach the customer, and complete the run. The city rewards couriers who keep their promise."><span>02</span><b>DELIVERY RUN</b><i>↗</i></button>
+            <button class="mission" role="tab" aria-selected="false" data-image="assets/gameplay-bike.png" data-label="MISSION / 03" data-title="KEEP THE<br />WHEELS TURNING." data-body="The road is wide open. Explore the streets, line up the next job, and own every mile between stops."><span>03</span><b>OPEN ROAD</b><i>↗</i></button>
+          </div>
+          <div class="mission-viewer">
+            <div class="mission-image-wrap"><img id="mission-image" src="assets/gameplay-pickup.png" alt="Delivery Empire gameplay: pickup run" /><button class="expand-shot" type="button" data-modal-image="assets/gameplay-pickup.png" data-modal-alt="Delivery Empire gameplay: pickup run">EXPAND VIEW <span>↗</span></button><div class="corner tl"></div><div class="corner tr"></div><div class="corner bl"></div><div class="corner br"></div></div>
+            <div class="mission-detail"><p id="mission-label" class="mission-label">MISSION / 01</p><h3 id="mission-title">PICK UP<br />THE PACE.</h3><p id="mission-body">Find the next order and pull up to the location. Every shift starts with a choice: wait around, or get moving.</p><div class="mission-status"><span>STATUS <b>AVAILABLE</b></span><span>ROUTE <b>CITY</b></span></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="city-break" aria-label="Delivery Empire city preview">
+        <img src="assets/delivery-empire-square.png" alt="Delivery Empire courier artwork" class="break-image" />
+        <div class="break-shade"></div><div class="break-rings" aria-hidden="true"></div>
+        <div class="break-copy reveal"><p class="eyebrow"><span></span> THE CITY IS CALLING</p><h2>NO SHORTCUTS.<br /><em>JUST DRIVE.</em></h2><a href="https://www.roblox.com/share?code=77a40424179036409f8a3e91c1508227&amp;type=ExperienceDetails&amp;stamp=1792428476535" target="_blank" rel="noreferrer" class="text-arrow">ENTER THE CITY <span>→</span></a></div>
+      </section>
+
+      <section class="intel section" id="intel">
+        <div class="intel-heading reveal"><div class="section-index"><span>03</span><i></i><p>VISUAL INTEL</p></div><div><p class="eyebrow dark"><span></span> FROM THE STREETS</p><h2>THE WORLD<br />IN <em>MOTION.</em></h2></div></div>
+        <div class="intel-grid reveal">
+          <button class="intel-card card-a" type="button" data-modal-image="assets/gameplay-bike.png" data-modal-alt="Delivery Empire motorcycle ride"><img src="assets/gameplay-bike.png" alt="" /><span>01 / RIDE OUT</span><i>+</i></button>
+          <button class="intel-card card-b" type="button" data-modal-image="assets/gameplay-dropoff.png" data-modal-alt="Delivery Empire drop-off run"><img src="assets/gameplay-dropoff.png" alt="" /><span>02 / DELIVER</span><i>+</i></button>
+          <button class="intel-card card-c" type="button" data-modal-image="assets/gameplay-pickup.png" data-modal-alt="Delivery Empire pickup run"><img src="assets/gameplay-pickup.png" alt="" /><span>03 / REPEAT</span><i>+</i></button>
+        </div>
+      </section>
+
+      <section class="update-block">
+        <div class="update-mark">DE</div><div class="update-copy reveal"><p class="eyebrow"><span></span> LIVE DISPATCH</p><h2>NEW ROADS<br /><em>AHEAD.</em></h2><p>New locations, screenshots, and Delivery Empire updates will appear here as the city expands.</p></div><a class="button outline-button" href="#top"><span>04</span> BACK TO START <b>↑</b></a>
+      </section>
+
+      <section class="final">
+        <p class="eyebrow"><span></span> CLOCK IN. RIDE OUT.</p><h2>YOUR SHIFT<br />STARTS <em>NOW.</em></h2><a class="button main-button" href="https://www.roblox.com/share?code=77a40424179036409f8a3e91c1508227&amp;type=ExperienceDetails&amp;stamp=1792428476535" target="_blank" rel="noreferrer"><span>01</span> PLAY ON ROBLOX <b>↗</b></a>
+      </section>
+    </main>
+
+    <footer><a class="brand" href="#top"><span class="brand-icon">DE</span><span>DELIVERY<br /><b>EMPIRE</b></span></a><p>DELIVERY EMPIRE © 2026</p><p>ROBLOX EXPERIENCE</p></footer>
+
+    <dialog class="image-modal" aria-label="Expanded gameplay screenshot"><button class="modal-close" type="button" aria-label="Close image">×</button><img src="" alt="" /></dialog>
+    <script src="script.js"></script>
+  </body>
+</html>
