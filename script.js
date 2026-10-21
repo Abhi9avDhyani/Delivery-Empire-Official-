@@ -13,6 +13,8 @@ const expandButton = document.querySelector('.expand-shot');
 const modal = document.querySelector('.image-modal');
 const modalImage = modal.querySelector('img');
 const closeModal = modal.querySelector('.modal-close');
+const secretCodeButton = document.querySelector('.secret-code');
+const copyFeedback = document.querySelector('.copy-feedback');
 
 const updateScroll = () => {
   const maximum = document.documentElement.scrollHeight - window.innerHeight;
@@ -80,6 +82,17 @@ document.querySelectorAll('[data-modal-image]').forEach((button) => {
 closeModal.addEventListener('click', () => modal.close());
 modal.addEventListener('click', (event) => {
   if (event.target === modal) modal.close();
+});
+
+secretCodeButton?.addEventListener('click', async () => {
+  const code = secretCodeButton.dataset.code;
+  try {
+    await navigator.clipboard.writeText(code);
+    copyFeedback.textContent = 'CODE COPIED — SEE YOU IN THE ABYSS.';
+  } catch {
+    copyFeedback.textContent = `CODE: ${code}`;
+  }
+  window.setTimeout(() => { copyFeedback.textContent = ''; }, 2800);
 });
 
 const observer = new IntersectionObserver((entries) => {

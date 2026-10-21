@@ -1,6 +1,10 @@
 /* Delivery Empire premium UI layer — clean neon controls and glass game panels. */
 :root { --blue: #44ef9a; --hot: #16b9e9; --navy: #07101d; --navy2: #0b192b; --paper: #edf0f3; --ink: #080d16; }
 
+.brand { gap: 0; }
+.brand-logo-wrap { display: block; width: 178px; height: 55px; overflow: hidden; }
+.brand-logo { display: block; width: 208px; max-width: none; height: 208px; transform: translate(-7px, -75px); }
+
 body { background: var(--paper); }
 .topbar { height: 90px; border-bottom-color: rgba(133, 184, 217, .14); background: rgba(4, 9, 16, .24); }
 .topbar.scrolled { height: 70px; background: rgba(4, 9, 16, .82); }
